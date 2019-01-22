@@ -1,0 +1,240 @@
+<script>
+document.documentElement.style.setProperty('--theme', 'var(--white)');
+document.documentElement.style.setProperty('--themeSecondary', 'var(--black)');
+document.documentElement.style.setProperty('--themeText', 'var(--black)');
+document.documentElement.style.setProperty('--themeBackground', 'var(--grey)');
+</script>
+<style>
+  .cutout {
+    /* background-color: var(--black); */
+    color: white;
+    font-size: 6vw; /* Responsive font size */
+    font-style: oblique;
+    font-family: "Brush Script MT", fantasy;
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 5px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%) skewY(-6deg); /* Position text in the middle */
+    /* mix-blend-mode: multiply; /* This makes the cutout text possible */
+    border-bottom: 3px solid white;
+  }
+
+</style>
+<div class="profile-header container-fluid banner anchor" style="height:300px;background-image:url(/assets/beach.jpg);">
+<div class="container">
+  <br><BR><BR>
+<div class="m-0 center cutout" style="width:auto;margin:0 auto;">Frank Bender</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-3 center">
+    <img src="/assets/profilePic.jpg" class='avatar-square shadow m-10' /><BR>
+      <div class="shadow round" style="text-align:left;background-color:var(--white);margin:5px;padding: 0px;">
+        <H3 class="pad-5 m-0" style="border-radius:10px 10px 0px 0px;border-bottom: 1px solid var(--black);background-color:var(--theme);color:black;">ABOUT</h3>
+        <div class="p-5">
+
+          <div class="">
+
+            <h4 class="pm-0" style="border-bottom: 1px solid var(--grey); margin-top: 0px;">User Info</H4>
+            <div style="padding-top: 10px;">
+              <strong><i class="fas fa-heart"></i><span class="text-theme underline"> Relationship</span></strong> Single
+              <span class="right"><a href="user.php?action=editProfile"><span class="glyphicon glyphicon-pencil text-lightgrey faded"></span></a></span><BR>
+              <strong><i class="fas fa-birthday-cake"></i><span class="text-theme underline"> Birthday</span></strong> January 25, 1996 (Aquarius)
+              <span class="right"><a href="user.php?action=editProfile"><span class="glyphicon glyphicon-pencil text-lightgrey faded"></span></a></span><BR>
+              <strong><i class="fas fa-user-graduate"></i><span class="text-theme underline"> Education</span></strong> Economics and Computer Science at University of Minnesota - Twin Cities
+              <span class="right"><a href="user.php?action=editProfile"><span class="glyphicon glyphicon-pencil text-lightgrey faded"></span></a></span><BR>
+              <strong><i class="fas fa-check-circle"></i><span class="text-theme underline"> Status</span></strong> Admin
+              <span class="right"><a href="user.php?action=editProfile"><span class="glyphicon glyphicon-pencil text-lightgrey faded"></span></a></span><BR>
+              <strong><i class="fas fa-chess-pawn"></i><span class="text-theme underline"> Hobbies</span></strong> Programmer, Writer, and Producer
+              <span class="right"><a href="user.php?action=editProfile"><span class="glyphicon glyphicon-pencil text-lightgrey faded"></span></a></span>
+            </div><BR>
+
+            <h4 class="pm-0" style="border-bottom: 1px solid var(--grey); margin-top: 0px;">Bio</H4>
+            <div id="bio">
+              <p>Hello, my name is Frank Bender. The following is a demo of one of the profile templates that Starzoku has to offer. This template was chosen specifically due to it's probable familiarity, especially if you are currently viewing this website on a desktop. Take a look around and any feedback would be greatly appreciated!</p>
+            </div>
+
+            <h4 class="pm-0" style="border-bottom: 1px solid var(--grey); margin-top: 0px;">Social Media Links</H4>
+            <div id="sm-links" class="white-bg pad-10 round">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-google"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+              <a href="#" class="fab fa-youtube"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-snapchat-ghost"></a>
+              <a href="#" class="fab fa-skype"></a>
+              <a href="#" class="fab fa-tumblr"></a>
+              <a href="#" class="fab fa-reddit"></a>
+              <a href="#" class="fab fa-soundcloud"></a>
+            </div><BR>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-9">
+    <!-- <div class="shadow bg-white m-10" style="height:285px;width:100%;background-image:url(/assets/joeyBenzLogo.jpg);background-size:cover;background-repeat:no-repeat;">
+
+    </div> -->
+    <style>
+      .resume{
+        font-family: "Gill Sans";
+      }
+      #story{
+        font-family: "Gill Sans";
+        font-size: 1.25vw; /* Responsive font size */
+      }
+      .resume ul{
+        list-style-type:square;
+        padding:5px;
+        display:inline-block;
+        clear:both;
+        margin:5px;
+        z-index:1;
+      }
+      .resume ul li{
+        margin:20px;
+      }
+      .resume h2{
+        font-weight:bold;
+      }
+      #skew-bg{
+        overflow:none;
+      }
+    </style>
+    <div class="shadow m-10 anchor t-white round resume" style="background-color:#900C3F;height:100%;">
+
+      <div id="shell" class="p-20" style="background-color:#581845;border-radius: 10px 10px 0px 0px;">
+      <H1 class="center">RESUME</H1>
+      <div class="center">fjbender2@gmail.com</div>
+<H2>Objective</H2>
+I am an aspiring web developer with experience in multiple languages. I enjoy working with others and have a strong passion for creative projects. My current website project under development can be seen here ………. A link to my online portfolio can be viewed here ………
+</div>
+
+<div class="row p-20" style="z-index:1;">
+<H2>Qualifications</H2>
+
+<b>Programming Language Knowledge</b><br><br>
+
+<strong class="round" style="background-color:var(--green);padding:5px;color:white;">Strong</strong><br>
+<p>Rails 5, Ruby, PHP, Html, CSS3, jQuery, AJAX</p>
+
+<strong class="round" style="background-color:#FFC300;padding:5px;color:white;">Moderate</strong><br>
+<p>Javascript, PDO, PostgreSQL, Java, SQL, Python, Flask, Jinja</p>
+
+<strong class="round" style="background-color:var(--red);padding:5px;color:white;">Weak</strong><br>
+<p>C, Ocaml, C++, MySQL, Vue.js, x86 Assembly</p>
+
+<p class="indent">I have knowledge of working with hosting websites such as Godaddy, Heroku, Github, Google Firebase, and Amazon Web Services.
+My work with relational databases is very strong and am in the process of building a real time social network similar in magnitude to Facebook.
+Through building a project of this size I have gained reputable experience in the creative and responsive aspects of front-end design and the optimizing of queries in back-end relational database organization.
+The language I love working with most is Ruby on Rails. Its MVC architecture makes my workflow very fluent and its wide array of gems can make daunting tasks such as search engines a breeze.
+Some gemfiles that I have notable experience with are: Elasticsearch, Autocomplete, Carrierwave, Faker and BCrypt. I also have knowledge with Javascript libraries QuillJS and ChartJS.</p>
+</div>
+
+<div id="skew-bg" style="background-color:#C70039;height:800px;transform:translateY(-75px) skewY(-18deg);">
+</div>
+
+<div id="shell" style="transform:translateY(-800px);z-index:1;">
+<div class="row p-20" style="z-index:1;">
+<H2>Experience</H2>
+
+<ul>
+<li>Abercrombie & Fitch<br>
+Brand Representative<br>
+Bloomington, MN - Mall of America<br>
+August 2017-January 2018, September 2018-Current</li>
+
+<li>University of Minnesota Bookstore<br>
+Cashier<br>
+Minneapolis, MN<br>
+April 2018-August 2018</li>
+
+<li>JLM Landscape<br>
+Landscaper<br>
+Edina, MN<br>
+June 2017-July 2017</li>
+
+<li>McDonald’s
+Crew Trainer<br>
+Stillwater, MN<br>
+July 2015-August 2015, February 2016-August 2016</li>
+
+<li>Thoele Dental Laboratory</br>
+Administrative Assistant<br>
+Waite Park, MN<br>
+June 2013-August 2014</li>
+
+<li>Marcus Parkwood Cinema<br>
+Concessionist<br>
+Waite Park, MN<br>
+August 2012-May 2013</li>
+</ul>
+</div>
+
+<div id="skew-bg" style="background-color:#FF5733;height:600px;transform:translateY(-50px) skewY(20deg);">
+</div>
+
+<div id="shell" style="transform:translateY(-600px);">
+<div class="row p-20">
+<H2>Volunteer Work</H2>
+<ul>
+<li>Active member of Alcoholics Anonymous</li>
+<li>MNYPAA (Minnesota Young People in Alcoholics Anonymous)</li>
+<li>Uptown AA Steering Board (October 2018 – Current)</li>
+<li>Chair of Jaywalkers AA Group (May 2018-Seprember 2018)</li>
+<li>Phi Sigma Kappa standing member and fraternity supporter</li>
+</ul>
+</div>
+
+<div class="row p-20">
+<H2>Education</H2>
+<ul>
+<li>University of Minnesota – Twin Cities<BR>
+January 2017-January 2019 (Taking a gap year due to finances)<br>
+Economics BS (16 Credits left)<br>
+Minor in Computer Science (4 Credits left)</li>
+
+<li>University of Massachusetts – Amherst<br>
+September 2014-January 2016 (3.1 GPA)</li>
+
+<li>Sartell High School<br>
+Graduated May 2014 with a 3.6 GPA</li>
+</ul>
+</div>
+
+<div class="row p-20">
+<H2>Personal Interests</H2>
+<p class="indent">I have a strong interest in creative fields.
+I produce music electronically and have songs on the internet.
+My soundcloud is …… I am an active member of Alcoholics Anonymous and do not drink.
+Website design is a passion of mine and I spend twelve hours a day researching and investing in programming knowledge.
+Currently I am trying to expand my knowledge of Photoshop and diversify my strength in other languages by rewriting past projects in different languages.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  <div id="story" class="shadow round bg-white m-10 p-20">
+    <H2 style="font-family:Brush Script MT, fantasy;font-size:48px;margin:0;">A Personal Story</H2>
+<p>My name is Frank Bender, I was born January 25, 1996 in Landstuhl, Germany.
+Through the course of my life I have lived in multiple states as a son of two parents in the Air Force.
+My mother was a Captain and my father was a Senior Master Sergaent. I have lived in Germany, Texas, North Dakota, Minnesota, and Massachusetts
+and multiple places in each state. Throughout this time I have had a total of eight surgeries one of them a a major spinal surgery which
+resulted in two rods and 32 titanium screws being put in my back. Growing up I had many hobbies: basketball, tennis, soccer, camping, skateboarding, snowboaridng, disc-golf, video-gaming,
+music production and DJing. Toward my college years I developed a major problem with drugs and alcohol. The result of this led to multiple hospitalizations and since
+then I have taken a strong interest in the recovery community and the twelve step program. In high school I
+developed an interest in web design and pursued computer science at UMass Amherst. The program was not as promising as I hoped and in some ways a bit introverted my taste so I switched to Economics.
+Until last April I had stepped away from the computer field but over the past year I thought I would build a social network for people in recovery. As I began to chip away at this project I decided to pursue a minor in computer science
+andd expand this website into something bigger. Building something of this size takes time and I hope to release a private testing Q2 2019.</p>
+  </div>
+  </div>
+</div>

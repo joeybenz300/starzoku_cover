@@ -1,0 +1,229 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+</head>
+<body>
+<style>
+
+  .fade{
+      animation: fade-slide-down 2s ease-out forwards;
+  }
+
+  .cycle{
+      animation: cycle 20s linear infinite;
+  }
+  @keyframes fade-slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes cycle {
+    from { background-position: 0 0; }
+      to { background-position: -400px 50px; }
+  }
+</style>
+  <div id="landing-wrapper" style="color:white;background-color:#404040;">
+  <div class="container-fluid cycle fade" id="cycle skew-bg" style="height:700px;color:white;background-image: url('/assets/stars2.jpg') !important;background-repeat: repeat;background-attachment:fixed;background-size: contain;">
+  <div class="container">
+    <div id="jumbotron-logo" class="center" style="padding-top:100px;color:var(--starzoku2);transform:skewY(-4deg);">
+      <div style="font-size:100px;margin:auto;"><b>STARZOKU</b></div><hr style="width:700px;outline:none;"><p style="font-size:48px;padding:0px;">Choose how you connect.</p>
+    </div>
+
+  </div>
+  </div>
+  <div id="skew-bg" style="background-color:var(--darkgrey);height:200px;transform:translateY(-75px) skewY(-4deg);">
+  </div>
+  <div class="container" style="transform:translateY(-150px);">
+    <div class="row">
+    <div class="col-7">
+      <img src="/assets/landing_screenshot.png" class="shadow" style="width:90%;height:auto;border-radius:10px;" />
+    </div>
+    <div class="col-5" style="float:right;">
+
+    <h2 class="m-0" style="font-size:50px;"><b>The Future of Social Networking.</b></h2>
+    <hr>
+    <p style="font-size:32px;">Choose. Create. Connect. Starzoku is a social network that allows members to build a profile specific to their own needs and interest. Whether it be marketing
+      , socializing, or promoting yourself. With Starzoku the options are limitless.
+    </div>
+  </div>
+  <BR>
+  <div style="transform:translateY(75px);">
+  <H2 class="center m-0" style="font-size:60px;color:#67e4e4;"><b>BENEFITS</b></H2>
+  <p class="center p-0" style="font-size:24px;"></p>
+  <div class="row">
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-user-tie" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-th" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-calendar-alt" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-comment-alt" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-users" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div id="well" class="shadow" style="background-color:#136c6c;margin:20px;border-radius:10px;">
+        <div class="center p-20" style="background-color:var(--starzoku);">
+          <i class="fas fa-crown" style="font-size:200px;color:var(--starzoku2);"></i>
+        </div>
+        <p class="p-20" style="color:;">Starzoku offers three distinct profile types which allows you to connect with others with similar interests.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div id="skew-bg" style="background-color:var(--darkgrey);height:200px;transform:translateY(75px) skewY(4deg);z-index: -10;">
+  </div>
+  <BR>
+  <div class="container-fluid" style="padding:50px 0px;color:white;background-image: url('/assets/space.jpg') !important;background-repeat: no-repeat;background-attachment:fixed;background-size: cover;">
+    <BR><BR><BR><BR><BR><BR><BR>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 center">
+          <img src="/assets/profilePic.jpg" style="background-color:var(--starzoku);padding:5px;" /><BR><Br><BR>
+          <%= link_to "My Portfolio", cover_portfolio_path, class: "link" %>
+        </div>
+        <div class="col-9">
+          <div class="shadow round p-15 m-10" style="background-color:var(--black);">
+            <H3>Building a behemoth</H3>
+            <p class="indent" style="font-size:26px;">
+              It has been a dream of mine to build a social network since I was a sophmore in high school.
+              Back in high school I took a dreamweaver class learning how to develop websites. I enjoyedd the class
+              so much that by the time the class was halfway through I had completed all the coursework for the class
+              and began to build a facebook clone. My knowledge of programming was very naive and later on when I decided to go to college
+              I figured I would major in computer science. With a history of drug abuse I and financial issues, I transferred schools and switched
+              majors to Economics due to reduced interest in the programming world. However around the time I got sober I came up with this idea of
+              building a blog for people in recovery. With this idea I started building a website with PHP and PDO/MySQL. My workflow and ease of programming had grown
+              a lot since my time in high school. On top of that the internet resources for programming had also grown. As I finished this recovery blog I
+              decided that maybe I could fulfill my adolescent dream of building a social network. Things were underway for a goodd six months. I enrolled in a a web design class
+              at the UofM where I gained expertise with languages such as Python and Flask, Vue.js, and PostgreSQL. I greatly enjoyedd the architecture of Flask
+              and thought about transferring languages due to some security issues with PHP. I began to do some research on other languages and came across
+              with Ruby on Rails. It was love at first sight. It's ORM capabilites and MVC layout ease had me immersing myself in code day and night.
+              In November 2018, I started a new website from scratch with Ruby on Rails. What you see now is the surface of a very big website. This website has many features
+              and innovative functionality. For more information on what Starzoku can do check out the about page HERE.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <BR><BR><BR><BR>
+    <div id="skew-bg" style="background-color:var(--darkgrey);height:140px;transform:translateY(120px) skewY(4deg);z-index: -10;">
+    </div>
+  </div>
+  <div class="container-fluid" style="padding:50px 0px;color:white;background-image: url('/assets/blackhex.jpg') !important;background-repeat: no-repeat;background-attachment:;background-size: cover;">
+    <div class="container">
+    <div class="row t-white">
+      <div class="col-6">
+        <H2>Why donate?</H2>
+        <p class="indent" style="font-size: 25px;">Building a social network can be cumbersome. From text editor to deployment. The creation of starzoku has been a long time coming.
+        However a website of this magnitude requires a hefty level investment. Through countless hours of programming and a plethora of databases,
+        with the appropriate amount of funding, Starzoku can be hosted securely and optimized for high speed performance. No donation is required for use of this website.
+        It is a service we wish to provide free to all users. For more information about what Starzoku has to offer or can do, check out the about and development pages.
+        Countless hours have been spent making this vision a reality though, so if you are interested in the possibility
+        of a new social network donate through the link below.</p>
+      </div>
+      <style>
+        .link{
+          background-color:var(--theme);
+          color:white;
+          padding:10px;
+          border-radius:10px;
+          font-size:32px;
+        }
+        .link:hover{
+          transition:0.2s;
+          color:var(--theme);
+          background-color:white;
+        }
+      </style>
+      <div class="col-6 center">
+        <img src="/assets/kickstarter.png" style="width:600px;margin-top:200px;" /><BR><BR><BR>
+        <a href="http://www.kickstarter.com" class="link">Donate Now</a>
+      </div>
+    </div>
+    </div>
+    <BR><BR><BR><BR>
+  </div>
+  <div class="container-fluid" style="padding:50px 0px;color:white;background-image: url('/assets/earth.png') !important;background-repeat: no-repeat;background-attachment:fixed;background-size: cover;">
+  <div id="skew-bg" style="background-color:var(--darkgrey);height:140px;transform:translateY(-120px) skewY(-4deg);">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3" style="font-size:28px;">
+        <span><i class="fas fa-phone"></i> (320) 281-8116</span><BR>
+        <span><i class="fas fa-globe"></i> Minneapolis, MN</span><BR>
+        <span><i class="fas fa-envelope"></i> starzokumail@gmail.com</span>
+      </div>
+<style>
+.sample-form input, .sample-form textarea{ margin:5px;border-radius:10px; }
+</style>
+      <div class="col-9 center">
+        <form class="sample-form">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Description"></textarea>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="container-fluid" style="background-color:var(--black);">
+    <div class="container p-20">
+    <H2 class="center" style="font-size:48px;color:var(--starzoku2);">STARZOKU</H2><BR><BR><BR><BR><BR>
+    <div class="row center">
+      <div class="col-4" style="border-right:1px solid var(--starzokul);">
+        afadf
+      </div>
+      <div class="col-4">
+        sdfsdf<H3>dfjhakdfhkjads</H3>
+      </div>
+      <div class="col-4" style="border-left:1px solid var(--starzokul);">
+        sfsdfsd<b>adfjkhakch</b>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

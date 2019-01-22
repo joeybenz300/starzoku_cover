@@ -1,0 +1,63 @@
+<script>
+  function navbar() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<script>
+  document.documentElement.style.setProperty('--theme', 'var(--starzoku)');
+  document.documentElement.style.setProperty('--themeAccent', 'var(--starzoku3)');
+  document.documentElement.style.setProperty('--themeSecondary', 'var(--starzoku2)');
+  document.documentElement.style.setProperty('--themeBackground', 'var(--starzokubg)');
+  document.documentElement.style.setProperty('--themeLight', 'hex2rgba_convert(var(--starzokul), 0.7)');
+  document.documentElement.style.setProperty('--themeText', 'var(--white)');
+  document.documentElement.style.setProperty('--corner', '0px');
+
+  document.getElementById("defaultOpen").click();
+
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+
+  function dropdown(a, b) {
+    var rf = a + "-dropdown-" + b;
+    var x = document.getElementById(rf);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<header>
+  <div class="container">
+    <nav class="nav-text" id="navbar">
+      <span class="brand left" style="font-size: 30px;color:var(--themeSecondary);"><%= link_to root_path, id: "logo" do %><b>Starzoku</b><% end %></span>
+      <ul id="navbar" class="navbar right" style="color:var(--themeText);">
+        <li><%= link_to "Home",   root_path %></li>
+            <!-- <li>%= link_to "Alpha",   '#' %></li> -->
+            <li><%= link_to "Features", '#' %></li>
+            <li><%= link_to "Donate", '#' %></li>
+            <li><%= link_to "Contact", '#' %></li>
+            <li><%= link_to "Developer", '#' %></li>
+            <!-- <li><= link_to "Privacy Policy", cover_privacy_policy_path %></li> -->
+            <li class="icon">
+              <a href="javascript:void(0);" onclick="navbar()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+      </ul>
+    </nav>
+  </div>
+</header>
